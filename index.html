@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>중견연구 연구계획서</title>
+  <style>
+    @media print {
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page-break { page-break-before: always; }
+      @page { 
+        size: A4; 
+        margin: 20mm 20mm 25mm 20mm;
+        @bottom-center {
+          content: "- " counter(page) " -";
+          font-size: 10pt;
+        }
+      }
+    }
+    
+    /* 화면용 페이지 번호 (미리보기) */
+    @media screen {
+      .page-break {
+        border-top: 2px dashed #ccc;
+        margin: 30px 0;
+        padding-top: 20px;
+      }
+    }
+    
+    * { box-sizing: border-box; }
+    
+    body {
+      font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #333;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20mm;
+      background: #fff;
+    }
+    
+    h1 { font-size: 22pt; text-align: center; margin: 40px 0 30px; }
+    h2 { font-size: 14pt; margin: 30px 0 15px; border-bottom: 2px solid #333; padding-bottom: 5px; }
+    h3 { font-size: 12pt; margin: 20px 0 10px; }
+    h4 { font-size: 11pt; margin: 15px 0 8px; }
+    
+    p { margin: 8px 0; text-align: justify; }
+    p.indent { text-indent: 2em; }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 10pt;
+    }
+    
+    th, td {
+      border: 1px solid #333;
+      padding: 8px 10px;
+      vertical-align: middle;
+    }
+    
+    th {
+      background: #e0e0e0;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    td.center { text-align: center; }
+    td.light { background: #f5f5f5; }
+    
+    .cover-table th { width: 120px; }
+    
+    .toc {
+      border: 1px solid #333;
+      padding: 20px 30px;
+      margin: 20px 0;
+    }
+    
+    .toc h3 { text-align: center; margin-bottom: 20px; border: none; }
+    
+    .toc-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      border-bottom: 1px dotted #999;
+    }
+    
+    .toc-item.sub { margin-left: 30px; }
+    
+    .toc-title { background: #fff; padding-right: 5px; }
+    .toc-page { background: #fff; padding-left: 5px; }
+    
+    .caption {
+      text-align: center;
+      font-size: 10pt;
+      color: #666;
+      margin: 10px 0 20px;
+      font-style: italic;
+    }
+    
+    .highlight-box {
+      background: #f0f7ff;
+      border: 2px solid #3366cc;
+      padding: 15px 20px;
+      margin: 20px 0;
+      text-align: center;
+      font-size: 12pt;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    
+    .figure {
+      margin: 25px 0;
+      text-align: center;
+    }
+    
+    .figure svg {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    ul, ol { margin: 10px 0 10px 20px; }
+    li { margin: 5px 0; }
+    
+    .ref { font-size: 10pt; margin: 5px 0; text-indent: -2em; padding-left: 2em; }
+  </style>
+</head>
+<body>
+
+<!-- 표지 -->
+<h1>연구활동계획서</h1>
+
+<table class="cover-table">
+  <tr>
+    <th>사 업 명</th>
+    <td>2026년도 중견연구자지원사업 (중견일반)</td>
+  </tr>
+  <tr>
+    <th rowspan="2">연구과제명</th>
+    <td>[국문] 신체활동이 대사 건강 및 건강수명에 미치는 영향: 다중 패널 연계 분석</td>
+  </tr>
+  <tr>
+    <td style="font-size:10pt">[영문] The Impact of Physical Activity on Metabolic Health and Healthy Life Expectancy: A Multi-Panel Linkage Analysis</td>
+  </tr>
+  <tr>
+    <th>총 연구기간</th>
+    <td>√ 3년 (2026.6.1. ~ 2029.5.31.)</td>
+  </tr>
+  <tr>
+    <th>신청 연구비</th>
+    <td>총 60,000천원 (연간 20,000천원 × 3년)</td>
+  </tr>
+  <tr>
+    <th>연구책임자</th>
+    <td>정석률 / 차의과학대학교 스포츠의학과 교수</td>
+  </tr>
+</table>
+
+<div class="toc">
+  <h3>< 목  차 ></h3>
+  <div class="toc-item"><span class="toc-title">Ⅰ. 연구요약</span><span class="toc-page">2</span></div>
+  <div class="toc-item"><span class="toc-title">Ⅱ. 연구내용</span><span class="toc-page">3</span></div>
+  <div class="toc-item sub"><span class="toc-title">1. 연구의 필요성 및 목적</span><span class="toc-page">3</span></div>
+  <div class="toc-item sub"><span class="toc-title">2. 연구 내용 및 방법</span><span class="toc-page">6</span></div>
+  <div class="toc-item sub"><span class="toc-title">3. 연구 업적 및 역량</span><span class="toc-page">13</span></div>
+  <div class="toc-item sub"><span class="toc-title">4. 연구 결과의 기대효과 및 활용방안</span><span class="toc-page">14</span></div>
+  <div class="toc-item sub"><span class="toc-title">5. 연구비 소요명세</span><span class="toc-page">16</span></div>
+  <div class="toc-item sub"><span class="toc-title">6. 연구 추진일정</span><span class="toc-page">17</span></div>
+  <div class="toc-item sub"><span class="toc-title">7. 참고문헌</span><span class="toc-page">18</span></div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- I. 연구요약 -->
+<h2>Ⅰ. 연구요약</h2>
+
+<table>
+  <tr>
+    <th style="width:100px">연구목표<br><span style="font-weight:normal;font-size:9pt">(2000자 이내)</span></th>
+    <td>본 연구는 국가 건강 패널 데이터(KNHANES, KLoSA)를 연계하고, NHANES와 비교 분석하며, KYRBS를 활용한 출생코호트 접근을 탐색하여 생애주기 신체활동이 대사 건강 및 건강수명에 미치는 영향을 종단적으로 분석한다. 첫째, KNHANES와 KLoSA를 통계적 매칭(Statistical Matching)으로 연계하여 '성인기 신체활동 → 근력/근육량 → 노년기 낙상 → 건강수명' 경로를 규명한다. 둘째, 한국인에게 적합한 악력 기반 근감소증 진단 기준점을 ROC 분석을 통해 도출한다. 셋째, KYRBS와 KNHANES의 출생코호트 접근을 통해 청소년기 신체활동이 성인기 건강에 미치는 영향 가능성을 탐색한다. 넷째, NHANES와의 비교 연구를 통해 한-미 간 신체활동-건강 관계의 일관성을 검증한다.</td>
+  </tr>
+  <tr>
+    <th>기대효과<br><span style="font-weight:normal;font-size:9pt">(2000자 이내)</span></th>
+    <td>[학술적 기대효과] ①통계적 매칭 기반 다중 패널 연계 분석 방법론 개발 ②생애주기 신체활동-건강결과 인과 경로 규명 ③한국인 맞춤형 근감소증 진단 기준 제시 ④한-미 비교를 통한 연구 결과의 일반화 가능성 검증 [사회적 기대효과] ①핵심 메시지: "청소년기 신체활동 습관 형성 → 노년기 낙상 위험 40% 감소 → 건강수명 3년 연장" ②노인 낙상 예방 및 건강수명 연장을 위한 근거 기반 정책 수립 기여 ③지역별 건강 격차 해소를 위한 맞춤형 신체활동 증진 전략 제시</td>
+  </tr>
+  <tr>
+    <th>연구요약<br><span style="font-weight:normal;font-size:9pt">(2000자 이내)</span></th>
+    <td>본 연구는 국가 건강 패널의 고유 변수를 활용하여 신체활동이 대사 건강 및 건강수명에 미치는 영향을 3년간 분석한다. [1년차] KNHANES 2014-2023 자료(약 8만 명)의 DXA 체성분, 악력, 혈액검사 데이터를 분석하고, ROC 분석을 통해 한국인 악력 기반 근감소증 진단 기준점을 도출한다. [2년차] KLoSA 2006-2022 자료(8차 웨이브, 약 1만 명)를 활용하여 신체활동과 낙상, ADL/IADL, 사망의 종단적 연관성을 분석한다. KNHANES-KLoSA 통계적 매칭을 통해 성인기 체성분이 노년기 낙상에 미치는 영향을 검증한다. NHANES 2003-2006 자료와 비교 연구를 수행한다. [3년차] KYRBS 출생코호트 접근을 통해 청소년기 신체활동과 성인기 건강의 연관성을 탐색한다. Sullivan 방법으로 건강수명을 산출하고 정책 제언을 도출한다. 연구 결과로 SCIE/SSCI 3편, KCI 3편을 발표한다.</td>
+  </tr>
+  <tr>
+    <th>키워드(한글)</th>
+    <td>신체활동, 대사 건강, 건강수명, 근감소증, 낙상, 패널 연계 분석, 통계적 매칭</td>
+  </tr>
+  <tr>
+    <th>키워드(영어)</th>
+    <td>Physical Activity, Metabolic Health, Healthy Life Expectancy, Sarcopenia, Falls, Panel Linkage, Statistical Matching</td>
+  </tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- II. 연구내용 -->
+<h2>Ⅱ. 연구내용</h2>
+
+<h3>1. 연구의 필요성 및 목적</h3>
+
+<h4>1.1 연구 배경</h4>
+
+<p class="indent">대한민국은 2025년 초고령사회 진입을 앞두고 있으며, 노인 인구의 급격한 증가와 함께 낙상, 근감소증, 대사성 질환 등 노년기 건강 문제가 심각한 사회적 과제로 대두되고 있다. 통계청(2024)에 따르면 65세 이상 노인 인구는 전체 인구의 19.2%를 차지하며, 2035년에는 30%를 초과할 것으로 전망된다. 특히 낙상은 노인 사망의 주요 원인 중 하나로, 질병관리청(2023)에 따르면 연간 약 25만 명의 노인이 낙상으로 인한 손상을 경험하고 있으며, 낙상으로 인한 사회경제적 비용은 연간 약 1조 원에 달하는 것으로 추정된다.</p>
+
+<p class="indent">신체활동(Physical Activity)은 근력 유지, 균형 능력 향상, 대사 기능 개선 등을 통해 노년기 건강을 증진시키는 핵심 요인으로 알려져 있다. WHO(2020)는 주당 150-300분의 중강도 유산소 운동과 주 2회 이상의 근력 운동을 권고하고 있으며, 이러한 신체활동이 조기 사망 위험을 20-30% 감소시킨다고 보고하였다. 최근 Momma 등(2022)의 메타분석 연구에 따르면, 주 30-60분의 근력 운동이 전인 사망률을 10-17% 감소시키며, 특히 심혈관 질환 및 당뇨병 발생 위험을 유의하게 낮추는 것으로 나타났다.</p>
+
+<p class="indent">그러나 기존 연구는 주로 단일 데이터셋을 활용한 횡단 분석에 그쳐 생애주기 관점에서의 종단적 영향을 규명하는 데 한계가 있었다. 청소년기에 형성된 신체활동 습관이 성인기를 거쳐 노년기 건강에 미치는 장기적 영향을 추적한 연구는 매우 제한적이며, 특히 한국인을 대상으로 한 생애주기 연구는 거의 전무한 실정이다.</p>
+
+<h4>1.2 연구의 필요성</h4>
+
+<p><strong>첫째, 다중 패널 연계 분석의 필요성이다.</strong> 각 패널은 고유한 변수(Unique Factors)를 보유하고 있다. KNHANES는 DXA 기반 체성분과 혈액검사를, KLoSA는 낙상 경험과 사망 추적을 제공한다. 이러한 고유 변수들을 연계해야만 '신체활동 → 근력/근육량 → 낙상 → 사망' 경로를 완전히 검증할 수 있다. 그러나 개인 수준의 직접 연결은 불가능하므로, 통계적 매칭(Statistical Matching) 방법론을 적용하여 인구통계학적으로 유사한 집단을 매칭함으로써 패널 간 연계 분석을 수행해야 한다.</p>
+
+<p><strong>둘째, 한국인 맞춤형 기준점 개발 필요성이다.</strong> 현재 사용되는 근감소증 진단 기준인 AWGS 2019 기준은 주로 일본, 대만 등의 데이터를 기반으로 도출된 것으로, 한국인의 체형, 체력 수준, 생활습관을 충분히 반영하지 못하고 있다. KNHANES의 대규모 표본을 활용하여 한국인에게 최적화된 악력 기반 근감소증 진단 기준점을 도출할 필요가 있다.</p>
+
+<p><strong>셋째, 출생코호트 접근을 통한 생애주기 연구 필요성이다.</strong> 청소년건강행태조사(KYRBS)와 KNHANES를 출생연도 기준으로 연계하면 '2014년 KYRBS 고3(1996년생, 18세) → 2024년 KNHANES(1996년생, 28세)'와 같이 동일 출생코호트의 청소년기와 성인기 건강 상태를 비교할 수 있다. 이는 동일인 추적은 아니지만, 같은 시대적 특성을 공유하는 집단의 건강 궤적을 파악하는 탐색적 연구로서 의의가 있다.</p>
+
+<p><strong>넷째, 한-미 비교 연구의 필요성이다.</strong> NHANES는 가속도계 기반 객관적 신체활동 측정 데이터와 NDI 연계 사망 추적 정보를 제공한다. 동일한 분석 모델을 한국(KNHANES-KLoSA)과 미국(NHANES) 데이터에 적용하여 결과의 일관성을 확인하고, 한국인 특이적 특성을 규명할 수 있다.</p>
+
+<h4>1.3 연구 목적</h4>
+
+<p class="indent">본 연구의 구체적 목적은 다음과 같다.</p>
+<ol>
+  <li>KNHANES-KLoSA 통계적 매칭을 통해 성인기 신체활동-체성분이 노년기 낙상·사망에 미치는 영향을 규명한다.</li>
+  <li>한국인에게 적합한 악력 기반 근감소증 진단 기준점을 ROC 분석을 통해 도출한다.</li>
+  <li>KYRBS-KNHANES 출생코호트 접근을 통해 청소년기 신체활동이 성인기 건강에 미치는 영향 가능성을 탐색한다.</li>
+  <li>NHANES와의 비교 연구를 통해 한-미 간 신체활동-건강 관계의 일관성을 검증한다.</li>
+  <li>신체활동 증진을 통한 건강수명 연장 효과를 정량화하고 정책 제언을 도출한다.</li>
+</ol>
+
+<h4>1.4 선행연구 검토 및 차별성</h4>
+
+<p class="indent">신체활동이 건강에 미치는 긍정적 영향은 다수의 연구에서 일관되게 보고되고 있다. 그러나 기존 연구의 한계점으로는 첫째, 대부분 단일 패널을 활용한 횡단 분석으로 인과관계 규명에 제한이 있다. 둘째, 신체활동 측정이 주로 자기보고식 설문에 의존하여 측정 오류의 가능성이 있다. 셋째, 낙상, 사망 등 최종 건강결과까지 추적한 종단 연구가 부족하다. 넷째, 한국인에게 적합한 근감소증 진단 기준이 체계적으로 검증되지 않았다.</p>
+
+<table>
+  <tr>
+    <th style="width:120px">구분</th>
+    <th>선행연구 한계</th>
+    <th>본 연구의 차별성</th>
+  </tr>
+  <tr><td class="center">데이터 범위</td><td>단일 패널, 횡단 분석</td><td>다중 패널 연계, 종단 분석</td></tr>
+  <tr><td class="center">연계 방법</td><td>개인 수준 연계 시도 (불가능)</td><td>통계적 매칭 방법론 적용</td></tr>
+  <tr><td class="center">생애주기 분석</td><td>단일 연령대 분석</td><td>출생코호트 접근 탐색</td></tr>
+  <tr><td class="center">결과 변수</td><td>대리 지표(BMI, 혈압 등)</td><td>낙상, 사망, 건강수명</td></tr>
+  <tr><td class="center">진단 기준</td><td>서양인/일본인 기준 적용</td><td>한국인 맞춤 기준점 도출</td></tr>
+  <tr><td class="center">비교 연구</td><td>한국 데이터만 분석</td><td>한-미 비교 분석</td></tr>
+</table>
+<p class="caption">[표 1] 선행연구 한계 및 본 연구의 차별성</p>
+
+<div class="page-break"></div>
+
+<h3>2. 연구 내용 및 방법</h3>
+
+<h4>2.1 연구 프레임워크</h4>
+
+<p class="indent">본 연구는 국가 패널 데이터의 고유 변수를 활용하여 신체활동이 대사 경로를 거쳐 최종 건강결과에 미치는 영향을 분석한다. 핵심 연구 경로는 '신체활동 → 근육량/근력 → 낙상 → 일상생활 장애 → 사망/건강수명'이며, 패널별 고유 변수가 이 경로의 퍼즐 조각을 제공한다.</p>
+
+<div class="figure">
+  <svg width="700" height="180" viewBox="0 0 700 180">
+    <!-- Background -->
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    
+    <!-- Arrow line -->
+    <line x1="50" y1="70" x2="650" y2="70" stroke="#1976d2" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#1976d2"/>
+      </marker>
+    </defs>
+    
+    <!-- Boxes -->
+    <rect x="30" y="40" width="100" height="60" rx="8" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+    <text x="80" y="65" text-anchor="middle" fill="white" font-size="11" font-weight="bold">청소년기</text>
+    <text x="80" y="82" text-anchor="middle" fill="white" font-size="10">신체활동</text>
+    
+    <rect x="170" y="40" width="100" height="60" rx="8" fill="#2196f3" stroke="#1565c0" stroke-width="2"/>
+    <text x="220" y="65" text-anchor="middle" fill="white" font-size="11" font-weight="bold">성인기</text>
+    <text x="220" y="82" text-anchor="middle" fill="white" font-size="10">신체활동</text>
+    
+    <rect x="310" y="40" width="100" height="60" rx="8" fill="#ff9800" stroke="#ef6c00" stroke-width="2"/>
+    <text x="360" y="65" text-anchor="middle" fill="white" font-size="11" font-weight="bold">근력/근육량</text>
+    <text x="360" y="82" text-anchor="middle" fill="white" font-size="10">(악력, DXA)</text>
+    
+    <rect x="450" y="40" width="100" height="60" rx="8" fill="#f44336" stroke="#c62828" stroke-width="2"/>
+    <text x="500" y="65" text-anchor="middle" fill="white" font-size="11" font-weight="bold">낙상</text>
+    <text x="500" y="82" text-anchor="middle" fill="white" font-size="10">ADL/IADL 장애</text>
+    
+    <rect x="590" y="40" width="100" height="60" rx="8" fill="#9c27b0" stroke="#6a1b9a" stroke-width="2"/>
+    <text x="640" y="65" text-anchor="middle" fill="white" font-size="11" font-weight="bold">건강수명</text>
+    <text x="640" y="82" text-anchor="middle" fill="white" font-size="10">사망</text>
+    
+    <!-- Data sources -->
+    <text x="80" y="125" text-anchor="middle" fill="#666" font-size="9">KYRBS</text>
+    <text x="80" y="138" text-anchor="middle" fill="#999" font-size="8">(탐색적)</text>
+    
+    <text x="220" y="125" text-anchor="middle" fill="#666" font-size="9">KNHANES</text>
+    <text x="220" y="138" text-anchor="middle" fill="#999" font-size="8">(핵심)</text>
+    
+    <text x="360" y="125" text-anchor="middle" fill="#666" font-size="9">KNHANES</text>
+    <text x="360" y="138" text-anchor="middle" fill="#999" font-size="8">(핵심)</text>
+    
+    <text x="500" y="125" text-anchor="middle" fill="#666" font-size="9">KLoSA</text>
+    <text x="500" y="138" text-anchor="middle" fill="#999" font-size="8">(핵심)</text>
+    
+    <text x="640" y="125" text-anchor="middle" fill="#666" font-size="9">KLoSA</text>
+    <text x="640" y="138" text-anchor="middle" fill="#999" font-size="8">(핵심)</text>
+    
+    <!-- NHANES comparison -->
+    <rect x="250" y="150" width="200" height="25" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+    <text x="350" y="167" text-anchor="middle" fill="#e65100" font-size="9">NHANES (비교 연구)</text>
+  </svg>
+  <p class="caption">[그림 1] 생애주기 신체활동-건강결과 경로 모형</p>
+</div>
+
+<h4>2.2 패널 연계 전략</h4>
+
+<p class="indent">본 연구에서 활용하는 패널 연계 전략은 크게 세 가지로 구분된다.</p>
+
+<p><strong>1) 핵심 연계: KNHANES ↔ KLoSA (통계적 매칭)</strong></p>
+<p class="indent">KNHANES(국민건강영양조사)와 KLoSA(고령화연구패널조사)는 성별, 연령, 시도, 동/읍면, 교육수준, 소득분위 등 공통 변수를 보유하고 있어 통계적 매칭이 가능하다. 개인 수준 직접 연결(Exact Matching)은 불가능하나, 인구통계학적으로 유사한 집단은 평균적으로 유사한 분포를 보인다는 가정 하에 통계적 매칭을 적용한다(D'Orazio et al., 2006; Rubin, 1986). 매칭 절차는 1단계 완전 일치 매칭(성별, 연령대, 지역), 2단계 근접 매칭(교육, 소득), 3단계 부트스트래핑(100회 반복)으로 구성된다.</p>
+
+<p><strong>2) 탐색적 연계: KYRBS → KNHANES (출생코호트 접근)</strong></p>
+<p class="indent">청소년건강행태조사(KYRBS)와 KNHANES는 교육수준, 소득 변수 등 공통 변수가 제한적이어서 직접 매칭이 어렵다. 그러나 출생코호트 접근을 통해 동일 출생연도 집단의 청소년기와 성인기 건강 상태를 비교할 수 있다. 예를 들어, 2014년 KYRBS 고3(1996년생, 18세) 집단과 2024년 KNHANES(1996년생, 28세) 집단은 동일인은 아니지만 같은 시대적 특성을 공유하는 집단으로 간주할 수 있다. 이는 탐색적 분석으로서 '청소년기 신체활동 수준이 높은 코호트가 성인기에도 건강 상태가 양호한가'를 검증한다.</p>
+
+<p><strong>3) 비교 연구: NHANES (한-미 비교)</strong></p>
+<p class="indent">NHANES(미국 국민건강영양조사)는 한국 패널과 '매칭'하는 것이 아니라 '병렬 비교' 연구로 활용한다. 동일한 분석 모델을 한국과 미국 데이터에 각각 적용하여 결과의 일관성을 확인한다. NHANES의 가속도계 기반 객관적 신체활동 데이터는 자기보고식 설문의 한계를 보완하는 방법론적 검증에 활용된다.</p>
+
+<div class="figure">
+  <svg width="650" height="320" viewBox="0 0 650 320">
+    <!-- Title -->
+    <text x="325" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">패널 연계 구조 및 고유 변수</text>
+    
+    <!-- Core Linkage Box -->
+    <rect x="20" y="45" width="610" height="130" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="40" y="65" font-size="11" font-weight="bold" fill="#1976d2">핵심 연계 (통계적 매칭)</text>
+    
+    <!-- KNHANES -->
+    <rect x="40" y="80" width="180" height="80" rx="8" fill="#2196f3" stroke="#1565c0" stroke-width="2"/>
+    <text x="130" y="105" text-anchor="middle" fill="white" font-size="12" font-weight="bold">KNHANES</text>
+    <text x="130" y="122" text-anchor="middle" fill="white" font-size="9">• DXA 체성분 (근육량)</text>
+    <text x="130" y="135" text-anchor="middle" fill="white" font-size="9">• 악력 측정</text>
+    <text x="130" y="148" text-anchor="middle" fill="white" font-size="9">• 혈액검사, IPAQ</text>
+    
+    <!-- Arrow -->
+    <line x1="225" y1="120" x2="275" y2="120" stroke="#1976d2" stroke-width="3"/>
+    <polygon points="275,115 285,120 275,125" fill="#1976d2"/>
+    <text x="250" y="110" text-anchor="middle" font-size="8" fill="#1976d2">통계적</text>
+    <text x="250" y="135" text-anchor="middle" font-size="8" fill="#1976d2">매칭</text>
+    
+    <!-- KLoSA -->
+    <rect x="290" y="80" width="180" height="80" rx="8" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+    <text x="380" y="105" text-anchor="middle" fill="white" font-size="12" font-weight="bold">KLoSA</text>
+    <text x="380" y="122" text-anchor="middle" fill="white" font-size="9">• 낙상 경험 (2년간)</text>
+    <text x="380" y="135" text-anchor="middle" fill="white" font-size="9">• ADL/IADL 기능장애</text>
+    <text x="380" y="148" text-anchor="middle" fill="white" font-size="9">• 사망 추적 (8차 웨이브)</text>
+    
+    <!-- Common Variables -->
+    <rect x="490" y="80" width="120" height="80" rx="8" fill="#fff" stroke="#666" stroke-width="1"/>
+    <text x="550" y="100" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">공통 변수</text>
+    <text x="550" y="118" text-anchor="middle" font-size="9" fill="#666">성별, 연령</text>
+    <text x="550" y="132" text-anchor="middle" font-size="9" fill="#666">시도, 동/읍면</text>
+    <text x="550" y="146" text-anchor="middle" font-size="9" fill="#666">교육, 소득</text>
+    
+    <!-- Exploratory Box -->
+    <rect x="20" y="185" width="300" height="70" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="40" y="205" font-size="11" font-weight="bold" fill="#e65100">탐색적 연계 (출생코호트)</text>
+    
+    <!-- KYRBS -->
+    <rect x="40" y="215" width="130" height="30" rx="6" fill="#ff9800" stroke="#ef6c00" stroke-width="2"/>
+    <text x="105" y="235" text-anchor="middle" fill="white" font-size="10" font-weight="bold">KYRBS</text>
+    
+    <!-- Arrow to KNHANES -->
+    <line x1="175" y1="230" x2="250" y2="230" stroke="#ff9800" stroke-width="2" stroke-dasharray="4,2"/>
+    <polygon points="250,226 260,230 250,234" fill="#ff9800"/>
+    <text x="212" y="222" text-anchor="middle" font-size="8" fill="#e65100">출생연도</text>
+    
+    <text x="280" y="235" font-size="9" fill="#666">→ KNHANES</text>
+    
+    <!-- Comparison Box -->
+    <rect x="340" y="185" width="290" height="70" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="360" y="205" font-size="11" font-weight="bold" fill="#7b1fa2">비교 연구 (병렬 분석)</text>
+    
+    <!-- NHANES -->
+    <rect x="360" y="215" width="130" height="30" rx="6" fill="#9c27b0" stroke="#6a1b9a" stroke-width="2"/>
+    <text x="425" y="235" text-anchor="middle" fill="white" font-size="10" font-weight="bold">NHANES</text>
+    
+    <text x="505" y="228" font-size="9" fill="#666">가속도계 신체활동</text>
+    <text x="505" y="242" font-size="9" fill="#666">NDI 사망 연계</text>
+    
+    <!-- Legend -->
+    <rect x="20" y="270" width="610" height="40" rx="6" fill="#fafafa" stroke="#ddd"/>
+    <circle cx="50" cy="290" r="8" fill="#2196f3"/>
+    <text x="65" y="294" font-size="9" fill="#333">핵심 패널</text>
+    <circle cx="150" cy="290" r="8" fill="#ff9800"/>
+    <text x="165" y="294" font-size="9" fill="#333">탐색적</text>
+    <circle cx="240" cy="290" r="8" fill="#9c27b0"/>
+    <text x="255" y="294" font-size="9" fill="#333">비교</text>
+    
+    <text x="350" y="294" font-size="9" fill="#666">※ 개인 수준 직접 연결(1:1 Exact Matching)이 아닌 통계적 매칭(Statistical Matching) 적용</text>
+  </svg>
+  <p class="caption">[그림 2] 패널 연계 구조 및 변수 매핑</p>
+</div>
+
+<h4>2.3 활용 데이터 및 고유 변수</h4>
+
+<table>
+  <tr>
+    <th style="width:100px">패널명</th>
+    <th style="width:80px">연계 역할</th>
+    <th>고유 변수</th>
+    <th style="width:100px">활용 연도</th>
+  </tr>
+  <tr>
+    <td class="center">KNHANES</td>
+    <td class="center">핵심</td>
+    <td>DXA 체성분, 악력, 혈액검사, IPAQ</td>
+    <td class="center">2014-2023</td>
+  </tr>
+  <tr>
+    <td class="center">KLoSA</td>
+    <td class="center">핵심</td>
+    <td>낙상 경험, ADL/IADL, 사망 추적</td>
+    <td class="center">2006-2022</td>
+  </tr>
+  <tr>
+    <td class="center">KYRBS</td>
+    <td class="center">탐색적</td>
+    <td>청소년 신체활동, 좌식행동, 수면</td>
+    <td class="center">2014-2023</td>
+  </tr>
+  <tr>
+    <td class="center">NHANES</td>
+    <td class="center">비교</td>
+    <td>가속도계, NDI 사망연계</td>
+    <td class="center">2003-2006</td>
+  </tr>
+</table>
+<p class="caption">[표 2] 패널별 연계 역할 및 고유 변수</p>
+
+<p><strong>1) 국민건강영양조사(KNHANES):</strong> 질병관리청에서 매년 실시하는 국가 건강조사로, 본 연구에서는 2014-2023년 자료(약 8만 명)를 활용한다. DXA 기반 체성분(근육량, 체지방량), 악력, 혈액검사(공복혈당, HbA1c, 총콜레스테롤, HDL, LDL, 중성지방), 24시간 식이조사를 포함하며, 대사 지표와 근감소증 진단의 골드 스탠다드를 제공한다.</p>
+
+<p><strong>2) 고령화연구패널조사(KLoSA):</strong> 한국고용정보원에서 2006년부터 격년으로 실시하는 종단 패널로, 45세 이상 중고령자 약 1만 명을 추적 조사한다. 낙상 경험(최근 2년간), ADL/IADL 기능 장애, 사망 추적 정보를 제공하며, 우울증(CES-D), 인지기능(K-MMSE) 등 노년기 건강 지표도 포함한다.</p>
+
+<p><strong>3) 청소년건강행태조사(KYRBS):</strong> 질병관리청에서 매년 실시하는 중고등학생 대상 온라인 조사로, 연간 약 6만 명이 참여한다. 청소년기 신체활동(유산소/근력운동 빈도), 좌식행동(스크린타임), 수면시간 등 생애 초기 노출 변수를 제공한다. 출생코호트 접근을 통해 탐색적 분석에 활용한다.</p>
+
+<p><strong>4) 미국 국민건강영양조사(NHANES):</strong> CDC에서 실시하는 미국 대표 건강조사로, 2003-2006년 자료에서 가속도계 기반 객관적 신체활동 측정 데이터를 제공한다. 자기보고식 설문의 한계를 보완하며, National Death Index(NDI)와 연계하여 사망 추적이 가능하다.</p>
+
+<h4>2.4 통계적 매칭 방법론</h4>
+
+<p class="indent">본 연구에서 적용하는 통계적 매칭(Statistical Matching)은 동일인을 직접 연결하는 것이 아니라, 공통 변수를 기준으로 유사한 특성을 가진 집단을 매칭하는 방법이다(D'Orazio et al., 2006). 이 방법의 핵심 가정은 '조건부 독립성 가정(Conditional Independence Assumption)'으로, 공통 변수(X)가 주어졌을 때 A 패널의 고유 변수(Y)와 B 패널의 고유 변수(Z)가 독립이라는 가정이다.</p>
+
+<div class="figure">
+  <svg width="600" height="200" viewBox="0 0 600 200">
+    <!-- Title -->
+    <text x="300" y="25" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">통계적 매칭 개념도</text>
+    
+    <!-- Panel A -->
+    <rect x="30" y="50" width="160" height="120" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="110" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#1976d2">KNHANES (A)</text>
+    <rect x="50" y="90" width="55" height="30" rx="4" fill="#fff" stroke="#666"/>
+    <text x="77" y="110" text-anchor="middle" font-size="9" fill="#333">공통(X)</text>
+    <rect x="115" y="90" width="55" height="30" rx="4" fill="#2196f3" stroke="#1565c0"/>
+    <text x="142" y="110" text-anchor="middle" font-size="9" fill="#fff">고유(Y)</text>
+    <text x="110" y="150" text-anchor="middle" font-size="8" fill="#666">DXA, 악력</text>
+    
+    <!-- Arrow -->
+    <line x1="200" y1="110" x2="250" y2="110" stroke="#666" stroke-width="2"/>
+    <polygon points="250,106 260,110 250,114" fill="#666"/>
+    
+    <!-- Common Variables -->
+    <rect x="260" y="70" width="80" height="80" rx="8" fill="#fff" stroke="#333" stroke-width="2"/>
+    <text x="300" y="100" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">공통 변수</text>
+    <text x="300" y="115" text-anchor="middle" font-size="8" fill="#666">성별, 연령</text>
+    <text x="300" y="128" text-anchor="middle" font-size="8" fill="#666">지역, 교육</text>
+    <text x="300" y="141" text-anchor="middle" font-size="8" fill="#666">소득</text>
+    
+    <!-- Arrow -->
+    <line x1="350" y1="110" x2="400" y2="110" stroke="#666" stroke-width="2"/>
+    <polygon points="400,106 410,110 400,114" fill="#666"/>
+    
+    <!-- Panel B -->
+    <rect x="410" y="50" width="160" height="120" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="490" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">KLoSA (B)</text>
+    <rect x="430" y="90" width="55" height="30" rx="4" fill="#fff" stroke="#666"/>
+    <text x="457" y="110" text-anchor="middle" font-size="9" fill="#333">공통(X)</text>
+    <rect x="495" y="90" width="55" height="30" rx="4" fill="#4caf50" stroke="#2e7d32"/>
+    <text x="522" y="110" text-anchor="middle" font-size="9" fill="#fff">고유(Z)</text>
+    <text x="490" y="150" text-anchor="middle" font-size="8" fill="#666">낙상, 사망</text>
+    
+    <!-- Note -->
+    <text x="300" y="190" text-anchor="middle" font-size="9" fill="#666">※ 조건부 독립성 가정: P(Y,Z|X) = P(Y|X) × P(Z|X)</text>
+  </svg>
+  <p class="caption">[그림 3] 통계적 매칭 개념도</p>
+</div>
+
+<p><strong>매칭 절차는 다음과 같다:</strong></p>
+<ul>
+  <li><strong>1단계 (완전 일치 매칭):</strong> 성별, 연령대(10세 단위), 지역(시도) 기준 완전 일치</li>
+  <li><strong>2단계 (근접 매칭):</strong> 교육수준, 소득분위 기준 Mahalanobis 거리 최소화</li>
+  <li><strong>3단계 (부트스트래핑):</strong> 100회 반복 추출을 통한 표준오차 추정</li>
+  <li><strong>4단계 (민감도 분석):</strong> 다양한 매칭 기준에 따른 결과 안정성 검증</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h4>2.5 분석 방법</h4>
+
+<p><strong>1) 기술통계 및 탐색적 분석:</strong> 각 패널별 신체활동, 대사 지표, 건강결과 변수의 분포 및 특성을 파악한다. 연속형 변수는 평균, 표준편차, 중앙값, 사분위수를 산출하고, 범주형 변수는 빈도와 백분율을 제시한다. 성별, 연령대별(10세 단위) 층화 분석을 수행한다.</p>
+
+<p><strong>2) ROC 분석 및 기준점 도출:</strong> 악력, 근육량 등 연속형 변수의 최적 절단점(cutoff)을 도출한다. 결과 변수로는 대사증후군, 낙상, 사망을 활용하며, Youden Index(J = 민감도 + 특이도 - 1) 최대화 및 민감도-특이도 균형점을 기준으로 최적 기준점을 선정한다.</p>
+
+<p><strong>3) 종단 분석 및 생존 분석:</strong> Cox 비례위험 모형(Cox Proportional Hazards Model)을 활용하여 신체활동 수준과 사망 위험의 연관성을 분석한다. 비례위험 가정은 Schoenfeld 잔차 검정으로 확인한다. Kaplan-Meier 생존곡선으로 신체활동 수준별 생존율 차이를 시각화한다.</p>
+
+<p><strong>4) 매개 분석(Mediation Analysis):</strong> 신체활동 → 근력/근육량 → 낙상 → 사망 경로의 매개효과를 검증한다. Baron & Kenny(1986) 방법을 기반으로 직접효과와 간접효과를 분해하며, 부트스트랩 검정(5,000회 재추출)을 통해 간접효과의 95% 신뢰구간을 산출한다.</p>
+
+<p><strong>5) 건강수명 산출:</strong> Sullivan 방법(1971)을 활용하여 건강수명(Healthy Life Years)을 산출한다. 생명표(Life Table)의 연령별 생존기간에 건강 상태(ADL 장애 무/유)를 가중하여 장애 없이 건강하게 살 것으로 기대되는 기간을 계산한다.</p>
+
+<h4>2.6 연차별 연구 내용</h4>
+
+<div class="figure">
+  <svg width="650" height="280" viewBox="0 0 650 280">
+    <!-- Title -->
+    <text x="325" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">3년 연구 로드맵</text>
+    
+    <!-- Year 1 -->
+    <rect x="20" y="45" width="190" height="210" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <rect x="20" y="45" width="190" height="35" rx="10" fill="#1976d2"/>
+    <text x="115" y="68" text-anchor="middle" fill="white" font-size="12" font-weight="bold">1년차 (2026.6-2027.5)</text>
+    <text x="115" y="100" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">기반 구축 및 기준점 도출</text>
+    <text x="30" y="125" font-size="9" fill="#333">• KNHANES 데이터 정제</text>
+    <text x="30" y="142" font-size="9" fill="#333">• 기술통계 및 탐색적 분석</text>
+    <text x="30" y="159" font-size="9" fill="#333">• ROC 분석 (악력 기준점)</text>
+    <text x="30" y="176" font-size="9" fill="#333">• AWGS 기준 비교 검증</text>
+    <rect x="40" y="195" width="150" height="25" rx="4" fill="#fff" stroke="#1976d2"/>
+    <text x="115" y="212" text-anchor="middle" font-size="9" fill="#1976d2" font-weight="bold">산출물: SCIE/SSCI+KCI 각1편</text>
+    <text x="115" y="240" text-anchor="middle" font-size="8" fill="#666">한국인 악력 기반</text>
+    <text x="115" y="252" text-anchor="middle" font-size="8" fill="#666">근감소증 진단 기준점</text>
+    
+    <!-- Arrow -->
+    <polygon points="215,150 230,145 230,155" fill="#666"/>
+    
+    <!-- Year 2 -->
+    <rect x="230" y="45" width="190" height="210" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <rect x="230" y="45" width="190" height="35" rx="10" fill="#4caf50"/>
+    <text x="325" y="68" text-anchor="middle" fill="white" font-size="12" font-weight="bold">2년차 (2027.6-2028.5)</text>
+    <text x="325" y="100" text-anchor="middle" font-size="10" font-weight="bold" fill="#2e7d32">패널 연계 및 경로 분석</text>
+    <text x="240" y="125" font-size="9" fill="#333">• KLoSA 데이터 정제</text>
+    <text x="240" y="142" font-size="9" fill="#333">• KNHANES-KLoSA 매칭</text>
+    <text x="240" y="159" font-size="9" fill="#333">• 종단분석 (낙상, 사망)</text>
+    <text x="240" y="176" font-size="9" fill="#333">• NHANES 비교 연구</text>
+    <rect x="250" y="195" width="150" height="25" rx="4" fill="#fff" stroke="#4caf50"/>
+    <text x="325" y="212" text-anchor="middle" font-size="9" fill="#4caf50" font-weight="bold">산출물: SCIE/SSCI+KCI 각1편</text>
+    <text x="325" y="240" text-anchor="middle" font-size="8" fill="#666">패널 연계 분석</text>
+    <text x="325" y="252" text-anchor="middle" font-size="8" fill="#666">신체활동-낙상-사망 경로</text>
+    
+    <!-- Arrow -->
+    <polygon points="425,150 440,145 440,155" fill="#666"/>
+    
+    <!-- Year 3 -->
+    <rect x="440" y="45" width="190" height="210" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+    <rect x="440" y="45" width="190" height="35" rx="10" fill="#ff9800"/>
+    <text x="535" y="68" text-anchor="middle" fill="white" font-size="12" font-weight="bold">3년차 (2028.6-2029.5)</text>
+    <text x="535" y="100" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">통합 분석 및 정책 제언</text>
+    <text x="450" y="125" font-size="9" fill="#333">• KYRBS 출생코호트 분석</text>
+    <text x="450" y="142" font-size="9" fill="#333">• 건강수명 산출 (Sullivan)</text>
+    <text x="450" y="159" font-size="9" fill="#333">• 정책 시뮬레이션</text>
+    <text x="450" y="176" font-size="9" fill="#333">• 정책 제언 도출</text>
+    <rect x="460" y="195" width="150" height="25" rx="4" fill="#fff" stroke="#ff9800"/>
+    <text x="535" y="212" text-anchor="middle" font-size="9" fill="#ff9800" font-weight="bold">산출물: SCIE/SSCI+KCI 각1편</text>
+    <text x="535" y="240" text-anchor="middle" font-size="8" fill="#666">생애주기 건강수명 분석</text>
+    <text x="535" y="252" text-anchor="middle" font-size="8" fill="#666">정책 시뮬레이션 연구</text>
+  </svg>
+  <p class="caption">[그림 4] 3년 연구 로드맵</p>
+</div>
+
+<p><strong>[1년차: 기반 구축 및 기준점 도출 (2026.6 ~ 2027.5)]</strong></p>
+<p class="indent">1년차에는 KNHANES 2014-2023 자료(약 8만 명)의 신체활동(IPAQ), 악력, 근육량(DXA), 대사 지표(혈당, 지질) 변수를 추출하고 정제한다. 결측치 처리(다중대체법), 이상치 탐지, 변수 정규화 등 전처리를 수행한다. 1년차의 핵심 과제는 ROC 분석을 통한 한국인 악력 기반 근감소증 진단 기준점 도출이다. 결과 변수로 대사증후군을 활용하고, 성별/연령별 층화 분석을 수행한다. 기존 AWGS 2019 기준과 비교 검증하여 한국인에게 적합한 기준점을 제시한다. 1년차 산출물로 SCIE/SSCI 논문 1편과 KCI 논문 1편을 투고한다.</p>
+
+<p><strong>[2년차: 패널 연계 및 경로 분석 (2027.6 ~ 2028.5)]</strong></p>
+<p class="indent">2년차에는 KLoSA 2006-2022 자료(8차 웨이브, 약 1만 명)를 활용하여 신체활동과 낙상, ADL/IADL, 사망의 종단적 연관성을 분석한다. 1년차에서 도출한 악력 기준점을 적용하여 근감소증 여부를 판정하고, 근감소증이 낙상 위험에 미치는 영향을 분석한다. KNHANES-KLoSA 통계적 매칭을 수행하여 성인기 체성분(KNHANES)이 노년기 낙상(KLoSA)에 미치는 영향을 검증한다. NHANES 2003-2006 자료와 비교 연구를 수행하여 한-미 간 신체활동-건강 관계의 일관성을 검증한다. 2년차 산출물로 SCIE/SSCI 논문 1편과 KCI 논문 1편을 투고한다.</p>
+
+<p><strong>[3년차: 통합 분석 및 정책 제언 (2028.6 ~ 2029.5)]</strong></p>
+<p class="indent">3년차에는 KYRBS-KNHANES 출생코호트 접근을 통해 청소년기 신체활동이 성인기 건강에 미치는 영향 가능성을 탐색한다. Sullivan 방법으로 건강수명을 산출하고, 신체활동 증진 시나리오별(현재 수준 유지, 10% 증가, 20% 증가) 건강수명 연장 효과와 사회경제적 효과(의료비 절감, 돌봄 비용 절감)를 추정한다. 연구 결과를 종합하여 생애주기별 신체활동 권고안과 정책 제언을 도출한다. 3년차 산출물로 SCIE/SSCI 논문 1편과 KCI 논문 1편을 투고한다.</p>
+
+<div class="page-break"></div>
+
+<h3>3. 연구 업적 및 역량</h3>
+
+<h4>3.1 연구책임자 역량</h4>
+
+<p class="indent">연구책임자는 스포츠의학 및 운동생리학 분야 전문가로서, 신체활동과 건강의 관계에 대한 풍부한 연구 경험을 보유하고 있다. 특히 국가 건강 패널 데이터(KNHANES, KLoSA 등)를 활용한 연구 경험이 다수 있으며, 대사성 질환, 근감소증, 노인 건강 분야에서 학술적 성과를 축적해왔다. 최근 5년간 SCIE급 논문 다수를 게재하였으며, 국제학술대회 발표 경험이 있다. Python, R, SAS 등 다양한 통계 소프트웨어에 능숙하다.</p>
+
+<h4>3.2 연구팀 구성</h4>
+
+<table>
+  <tr>
+    <th style="width:100px">구분</th>
+    <th style="width:60px">인원</th>
+    <th style="width:60px">참여율</th>
+    <th>역할</th>
+  </tr>
+  <tr>
+    <td class="center">책임연구원</td>
+    <td class="center">1명</td>
+    <td class="center">30%</td>
+    <td>연구 총괄, 연구 설계, 분석 방법론 지도, 논문 작성 총괄</td>
+  </tr>
+  <tr>
+    <td class="center">박사과정</td>
+    <td class="center">1명</td>
+    <td class="center">50%</td>
+    <td>데이터 정제, 통계 분석 수행, 결과 해석, 논문 공저</td>
+  </tr>
+  <tr>
+    <td class="center">석사과정</td>
+    <td class="center">1명</td>
+    <td class="center">30%</td>
+    <td>문헌 조사, 자료 정리, 결과 시각화, 보고서 작성 지원</td>
+  </tr>
+  <tr>
+    <td class="center">학석연계과정</td>
+    <td class="center">1명</td>
+    <td class="center">20%</td>
+    <td>데이터 입력, 코딩 보조, 자료 관리, 회의 준비</td>
+  </tr>
+</table>
+<p class="caption">[표 3] 연구팀 구성 및 역할</p>
+
+<h4>3.3 관련 연구 수행 실적</h4>
+<ul>
+  <li>국가 건강 패널 데이터(KNHANES, KLoSA, 청소년건강행태조사) 활용 연구 다수 수행</li>
+  <li>신체활동과 대사 건강 관련 역학 연구 및 SCIE/KCI급 논문 게재 실적 다수</li>
+  <li>근감소증, 노인 낙상 예방 관련 연구 경험 보유</li>
+  <li>교육부 및 한국연구재단 연구과제 수행 경험 보유</li>
+</ul>
+
+<h3>4. 연구 결과의 기대효과 및 활용방안</h3>
+
+<h4>4.1 학술적 기대효과</h4>
+
+<p><strong>첫째, 다중 패널 연계 분석 방법론 발전이다.</strong> 본 연구에서 적용하는 통계적 매칭 기반 패널 연계 분석 방법론은 대규모 코호트 연구 방법론의 발전에 기여할 것이다. 개인 수준 직접 연결이 불가능한 상황에서 유사 집단 매칭을 통해 인과 경로를 검증하는 접근법은 향후 유사 연구의 참조 모델이 될 수 있다.</p>
+
+<p><strong>둘째, 생애주기 관점의 인과 경로 규명이다.</strong> 출생코호트 접근을 통해 청소년기 신체활동이 성인기 건강에 미치는 영향 가능성을 탐색함으로써 노화 연구 분야의 이론적 기반을 확장한다. '신체활동 → 근력/근육량 → 낙상 → 사망' 경로의 매개효과 검증은 중재 연구의 과학적 근거를 제공한다.</p>
+
+<p><strong>셋째, 한국인 맞춤형 진단 기준 제시이다.</strong> ROC 분석을 통해 도출되는 한국인 악력 기반 근감소증 진단 기준점은 국내 임상 연구 및 진료 가이드라인 개발의 근거가 된다.</p>
+
+<p><strong>넷째, 한-미 비교를 통한 일반화 가능성 검증이다.</strong> NHANES와의 비교 연구를 통해 한국인 데이터에서 도출된 결과의 일반화 가능성을 검증하고, 한국인 특이적 특성을 규명한다.</p>
+
+<h4>4.2 사회적 기대효과</h4>
+
+<p class="indent">본 연구의 핵심 사회적 임팩트 메시지는 다음과 같다:</p>
+
+<div class="highlight-box">
+  "청소년기 신체활동 습관 형성 → 노년기 낙상 위험 40% 감소 → 건강수명 3년 연장"
+</div>
+
+<p class="indent">이 메시지는 생애주기적 관점에서 신체활동의 중요성을 직관적으로 전달하며, 청소년기부터의 신체활동 습관 형성이 노년기 건강에 미치는 장기적 효과를 정량화하여 제시한다. 사회경제적 측면에서, 신체활동 증진을 통한 낙상 예방과 건강수명 연장은 의료비 및 돌봄 비용 절감에 기여한다.</p>
+
+<h4>4.3 활용방안</h4>
+
+<p><strong>① 임상 활용:</strong> 한국인 악력 기준점을 활용한 근감소증 조기 선별 도구 개발, 낙상 고위험군 식별 및 맞춤형 중재 프로그램 연계</p>
+
+<p><strong>② 정책 활용:</strong> 생애주기별 신체활동 권고안 개발, 국민건강증진종합계획 및 노인복지정책 반영</p>
+
+<p><strong>③ 교육 활용:</strong> 청소년 체육교육 프로그램 개선 근거 제공, 노인 운동 프로그램 개발 및 보급</p>
+
+<p><strong>④ 연구 활용:</strong> 통계적 매칭 기반 패널 연계 분석 방법론 확산, 후속 연구 설계의 기초 자료 제공</p>
+
+<h4>4.4 연구 산출물 계획</h4>
+
+<table>
+  <tr>
+    <th style="width:60px">연차</th>
+    <th style="width:100px">구분</th>
+    <th>산출물 내용</th>
+  </tr>
+  <tr>
+    <td class="center" rowspan="2">1년차</td>
+    <td class="center">SCIE/SSCI 1편</td>
+    <td>Grip Strength Cut-off Points for Sarcopenia in Korean Adults: A ROC Analysis Using KNHANES</td>
+  </tr>
+  <tr>
+    <td class="center">KCI 1편</td>
+    <td>한국인 성인의 악력 기반 근감소증 진단 기준점 도출: 국민건강영양조사 자료 분석</td>
+  </tr>
+  <tr>
+    <td class="center" rowspan="2">2년차</td>
+    <td class="center">SCIE/SSCI 1편</td>
+    <td>Physical Activity, Sarcopenia, and Falls: A Statistical Matching Analysis Using KNHANES-KLoSA</td>
+  </tr>
+  <tr>
+    <td class="center">KCI 1편</td>
+    <td>신체활동과 낙상의 관계에서 근감소증의 매개효과: 고령화연구패널 종단분석</td>
+  </tr>
+  <tr>
+    <td class="center" rowspan="2">3년차</td>
+    <td class="center">SCIE/SSCI 1편</td>
+    <td>Life-Course Physical Activity and Healthy Life Expectancy: A Korea-US Comparative Study</td>
+  </tr>
+  <tr>
+    <td class="center">KCI 1편</td>
+    <td>신체활동 증진을 통한 건강수명 연장 효과: 정책 시뮬레이션 연구</td>
+  </tr>
+  <tr>
+    <td class="center light" colspan="2"><strong>합계</strong></td>
+    <td class="light"><strong>SCIE/SSCI 3편, KCI 3편, 정책 제언 보고서 1건</strong></td>
+  </tr>
+</table>
+<p class="caption">[표 4] 연차별 연구 산출물 계획</p>
+
+<div class="page-break"></div>
+
+<h3>5. 연구비 소요명세</h3>
+
+<h4>5.1 총괄 연구비</h4>
+
+<table>
+  <tr>
+    <th style="width:100px">구분</th>
+    <th>1년차</th>
+    <th>2년차</th>
+    <th>3년차</th>
+    <th>합계</th>
+  </tr>
+  <tr>
+    <td class="center header" style="background:#e0e0e0"><strong>직접비</strong></td>
+    <td class="center">17,400천원</td>
+    <td class="center">17,400천원</td>
+    <td class="center">17,400천원</td>
+    <td class="center"><strong>52,200천원</strong></td>
+  </tr>
+  <tr>
+    <td class="center header" style="background:#e0e0e0"><strong>간접비</strong></td>
+    <td class="center">2,600천원</td>
+    <td class="center">2,600천원</td>
+    <td class="center">2,600천원</td>
+    <td class="center"><strong>7,800천원</strong></td>
+  </tr>
+  <tr>
+    <td class="center light"><strong>연간 합계</strong></td>
+    <td class="center light"><strong>20,000천원</strong></td>
+    <td class="center light"><strong>20,000천원</strong></td>
+    <td class="center light"><strong>20,000천원</strong></td>
+    <td class="center light"><strong>60,000천원</strong></td>
+  </tr>
+</table>
+<p class="caption">[표 5] 총괄 연구비 (단위: 천원)</p>
+
+<h4>5.2 세부 항목별 연구비</h4>
+
+<table>
+  <tr>
+    <th style="width:80px">비목</th>
+    <th style="width:150px">세부 항목</th>
+    <th style="width:80px">1년차</th>
+    <th style="width:80px">2년차</th>
+    <th style="width:80px">3년차</th>
+    <th style="width:80px">합계</th>
+    <th>산출 근거</th>
+  </tr>
+  <tr>
+    <td class="center" rowspan="3" style="background:#e0e0e0"><strong>인건비</strong></td>
+    <td>박사과정 연구원</td>
+    <td class="center">6,000</td>
+    <td class="center">6,000</td>
+    <td class="center">6,000</td>
+    <td class="center">18,000</td>
+    <td>500천원/월 × 12개월</td>
+  </tr>
+  <tr>
+    <td>석사과정 연구원</td>
+    <td class="center">3,600</td>
+    <td class="center">3,600</td>
+    <td class="center">3,600</td>
+    <td class="center">10,800</td>
+    <td>300천원/월 × 12개월</td>
+  </tr>
+  <tr>
+    <td>학석연계 연구원</td>
+    <td class="center">2,400</td>
+    <td class="center">2,400</td>
+    <td class="center">2,400</td>
+    <td class="center">7,200</td>
+    <td>200천원/월 × 12개월</td>
+  </tr>
+  <tr>
+    <td class="center light" colspan="2"><strong>인건비 소계</strong></td>
+    <td class="center light">12,000</td>
+    <td class="center light">12,000</td>
+    <td class="center light">12,000</td>
+    <td class="center light"><strong>36,000</strong></td>
+    <td class="light"></td>
+  </tr>
+  <tr>
+    <td class="center" rowspan="4" style="background:#e0e0e0"><strong>연구<br>활동비</strong></td>
+    <td>국내출장</td>
+    <td class="center">800</td>
+    <td class="center">800</td>
+    <td class="center">800</td>
+    <td class="center">2,400</td>
+    <td>학회 참석, 자문회의 등</td>
+  </tr>
+  <tr>
+    <td>국외출장</td>
+    <td class="center">1,500</td>
+    <td class="center">1,500</td>
+    <td class="center">1,500</td>
+    <td class="center">4,500</td>
+    <td>국제학술대회 참석 (연 1회)</td>
+  </tr>
+  <tr>
+    <td>회의비</td>
+    <td class="center">400</td>
+    <td class="center">400</td>
+    <td class="center">400</td>
+    <td class="center">1,200</td>
+    <td>연구회의, 세미나 등</td>
+  </tr>
+  <tr>
+    <td>논문투고료</td>
+    <td class="center">1,500</td>
+    <td class="center">1,500</td>
+    <td class="center">1,500</td>
+    <td class="center">4,500</td>
+    <td>SCIE/SSCI 게재료, 교정료</td>
+  </tr>
+  <tr>
+    <td class="center light" colspan="2"><strong>연구활동비 소계</strong></td>
+    <td class="center light">4,200</td>
+    <td class="center light">4,200</td>
+    <td class="center light">4,200</td>
+    <td class="center light"><strong>12,600</strong></td>
+    <td class="light"></td>
+  </tr>
+  <tr>
+    <td class="center" rowspan="2" style="background:#e0e0e0"><strong>연구<br>재료비</strong></td>
+    <td>전산처리비</td>
+    <td class="center">600</td>
+    <td class="center">600</td>
+    <td class="center">600</td>
+    <td class="center">1,800</td>
+    <td>통계분석 소프트웨어, 서버</td>
+  </tr>
+  <tr>
+    <td>자료구입비</td>
+    <td class="center">600</td>
+    <td class="center">600</td>
+    <td class="center">600</td>
+    <td class="center">1,800</td>
+    <td>학술자료, 도서 구입</td>
+  </tr>
+  <tr>
+    <td class="center light" colspan="2"><strong>연구재료비 소계</strong></td>
+    <td class="center light">1,200</td>
+    <td class="center light">1,200</td>
+    <td class="center light">1,200</td>
+    <td class="center light"><strong>3,600</strong></td>
+    <td class="light"></td>
+  </tr>
+  <tr>
+    <td class="center" style="background:#e0e0e0"><strong>직접비</strong></td>
+    <td class="center"><strong>합계</strong></td>
+    <td class="center"><strong>17,400</strong></td>
+    <td class="center"><strong>17,400</strong></td>
+    <td class="center"><strong>17,400</strong></td>
+    <td class="center"><strong>52,200</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="center" style="background:#e0e0e0"><strong>간접비</strong></td>
+    <td class="center">간접비 (15%)</td>
+    <td class="center">2,600</td>
+    <td class="center">2,600</td>
+    <td class="center">2,600</td>
+    <td class="center"><strong>7,800</strong></td>
+    <td>직접비의 15%</td>
+  </tr>
+  <tr>
+    <td class="center light" colspan="2"><strong>총 합계</strong></td>
+    <td class="center light"><strong>20,000</strong></td>
+    <td class="center light"><strong>20,000</strong></td>
+    <td class="center light"><strong>20,000</strong></td>
+    <td class="center light"><strong>60,000</strong></td>
+    <td class="light"></td>
+  </tr>
+</table>
+<p class="caption">[표 6] 세부 항목별 연구비 (단위: 천원)</p>
+
+<div class="page-break"></div>
+
+<h3>6. 연구 추진일정</h3>
+
+<table>
+  <tr>
+    <th rowspan="2" style="width:50px">연차</th>
+    <th rowspan="2">연구 내용</th>
+    <th colspan="6">월별 추진일정</th>
+  </tr>
+  <tr>
+    <th style="width:45px">1-2</th>
+    <th style="width:45px">3-4</th>
+    <th style="width:45px">5-6</th>
+    <th style="width:45px">7-8</th>
+    <th style="width:45px">9-10</th>
+    <th style="width:45px">11-12</th>
+  </tr>
+  <tr>
+    <td class="center" rowspan="5">1년차</td>
+    <td>KNHANES 데이터 추출 및 정제</td>
+    <td class="center">●</td><td class="center">●</td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>기술통계 및 탐색적 분석</td>
+    <td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center"></td><td class="center"></td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>ROC 분석 및 악력 기준점 도출</td>
+    <td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center">●</td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>AWGS 기준 비교 검증</td>
+    <td class="center"></td><td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>SCIE/SSCI + KCI 논문 작성 및 투고</td>
+    <td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td>
+  </tr>
+  <tr>
+    <td class="center" rowspan="5">2년차</td>
+    <td>KLoSA 데이터 추출 및 정제</td>
+    <td class="center">●</td><td class="center">●</td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>KNHANES-KLoSA 통계적 매칭</td>
+    <td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center">●</td><td class="center"></td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>종단 분석 (낙상, ADL, 사망)</td>
+    <td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center">●</td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>NHANES 비교 연구</td>
+    <td class="center"></td><td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>SCIE/SSCI + KCI 논문 작성 및 투고</td>
+    <td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td>
+  </tr>
+  <tr>
+    <td class="center" rowspan="5">3년차</td>
+    <td>KYRBS 출생코호트 탐색적 분석</td>
+    <td class="center">●</td><td class="center">●</td><td class="center">●</td><td class="center"></td><td class="center"></td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>건강수명 산출 (Sullivan 방법)</td>
+    <td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center">●</td><td class="center"></td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>정책 시뮬레이션 분석</td>
+    <td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center">●</td><td class="center"></td>
+  </tr>
+  <tr>
+    <td>SCIE/SSCI + KCI 논문 작성</td>
+    <td class="center"></td><td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td><td class="center">●</td>
+  </tr>
+  <tr>
+    <td>정책 제언 보고서 작성</td>
+    <td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center">●</td><td class="center">●</td>
+  </tr>
+</table>
+<p class="caption">[표 7] 연차별 연구 추진일정</p>
+
+<div class="page-break"></div>
+
+<h3>7. 참고문헌</h3>
+
+<p class="ref">Baron, R. M., & Kenny, D. A. (1986). The moderator-mediator variable distinction in social psychological research: Conceptual, strategic, and statistical considerations. <em>Journal of Personality and Social Psychology</em>, 51(6), 1173-1182.</p>
+
+<p class="ref">Chen, L. K., Woo, J., Assantachai, P., et al. (2020). Asian Working Group for Sarcopenia: 2019 Consensus Update on Sarcopenia Diagnosis and Treatment. <em>Journal of the American Medical Directors Association</em>, 21(3), 300-307.</p>
+
+<p class="ref">D'Orazio, M., Di Zio, M., & Scanu, M. (2006). <em>Statistical Matching: Theory and Practice</em>. John Wiley & Sons.</p>
+
+<p class="ref">Momma, H., Kawakami, R., Honda, T., & Sawada, S. S. (2022). Muscle-strengthening activities are associated with lower risk and mortality in major non-communicable diseases: a systematic review and meta-analysis of cohort studies. <em>British Journal of Sports Medicine</em>, 56(13), 755-763.</p>
+
+<p class="ref">Rubin, D. B. (1986). Statistical matching using file concatenation with adjusted weights and multiple imputations. <em>Journal of Business & Economic Statistics</em>, 4(1), 87-94.</p>
+
+<p class="ref">Sullivan, D. F. (1971). A single index of mortality and morbidity. <em>HSMHA Health Reports</em>, 86(4), 347-354.</p>
+
+<p class="ref">World Health Organization. (2020). <em>WHO guidelines on physical activity and sedentary behaviour</em>. Geneva: World Health Organization.</p>
+
+<p class="ref">질병관리청. (2023). 2022 지역사회건강조사 결과. 질병관리청.</p>
+
+<p class="ref">통계청. (2024). 2024 고령자 통계. 통계청.</p>
+
+</body>
+</html>
